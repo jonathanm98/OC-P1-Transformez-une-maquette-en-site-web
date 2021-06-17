@@ -11,13 +11,13 @@
 <body>
     <header>
         <img src="images/logo/Reservia.svg" alt="Logo du site Reservia">
-        <div>
-            <ul>
-                <li class="menu_h"><a href="index.html">Hébergements</a></li>
-                <li class="menu_a"><a href="#"><span class="mcenter">Activités</span></a></li>
-            </ul>
+        <nav>
+            <div>
+                <a class="hmenu" href="index.html">Hébergements</a>
+                <a class="hmenu" href="#">Activités</a>
+            </div>
             <a href="#" class="register">S'inscrire</a>
-        </div>
+        </nav>
         
     </header>
 
@@ -29,7 +29,7 @@
 
         <nav class="nav_top">
             <form action="#" method="post" class="nav_form">
-                <label for="search"><img class="svg_min" src="images/icon/map_marker.svg" alt=""></label> 
+                <label for="search"><img class="svg_med" src="images/icon/map_marker.svg" alt=""></label> 
                 <input type="text" id="search" name="search" placeholder="ex : Marseille, France">
                 <input type="submit" value="Rechercher" class="form_summ" />
             </form>
@@ -63,7 +63,7 @@
                 </div>
             </div>
 
-            <p><img src="images/icon/info.svg" class="svg_min" alt=""> Plus de 500 logements sont disponibles dans cette ville</p>
+            <p class="info"><img src="images/icon/info.svg" class="svg_min" alt=""> Plus de 500 logements sont disponibles dans cette ville</p>
         </nav>
 
         <section id="hebergements">
@@ -94,7 +94,7 @@
                     <img src="images/hebergements/hotel_port.jpg" alt="">
                     <figcaption>
                         <h3>Hôtel du port</h3>
-                        <p>Nuit à partir de 52€</p>
+                        <p>Nuit à partir de 52<strong>&euro;</strong></p>
                     </figcaption>
                 </figure>
                 <span>
@@ -111,7 +111,7 @@
                     <img src="images/hebergements/hotel_mouette.jpg" alt="">
                     <figcaption>
                         <h3>Hôtel Les mouettes</h3>
-                        <p>Nuit à partir de 76€</p>
+                        <p>Nuit à partir de 76<strong>&euro;</strong></p>
                     </figcaption>
                 </figure>
                 <span>
@@ -128,7 +128,7 @@
                     <img src="images/hebergements/hotel_mer.jpg" alt="">
                     <figcaption>
                         <h3>Hôtel de la mer</h3>
-                        <p>Nuit à partir de 46€</p>
+                        <p>Nuit à partir de 46<strong>&euro;</strong></p>
                     </figcaption>
                 </figure>
                 <span>
@@ -145,7 +145,7 @@
                     <img src="images/hebergements/auberge_panier.jpg" alt="">
                     <figcaption>
                         <h3>Auberge Le Panier</h3>
-                        <p>Nuit à partir de <strong>23€</strong></p>
+                        <p>Nuit à partir de <strong>23&euro;</strong></p>
                     </figcaption>
                 </figure>
                 <span>
@@ -162,7 +162,7 @@
                     <img src="images/hebergements/hotel_amina.jpg" alt="">
                     <figcaption>
                         <h3>Hôtel ches Amina</h3>
-                        <p>Nuit à partir de 96€</p>
+                        <p>Nuit à partir de 96<strong>&euro;</strong></p>
                     </figcaption>
                 </figure>
                 <span>
@@ -180,45 +180,51 @@
             
             <h2>Les plus populaires</h2>
                 <div>
-                    <article>
+                    <figure>
                         <img src="images/hebergements/hotel_soleil.jpg" alt="">
-                        <h3>Hôtel Le soleil du matin</h3>
-                        <p>Nuit à partir de 128€</p>
-                        <div>
-                            <img src="images/icon/star.svg" class="svg_min" alt="">
-                            <img src="images/icon/star.svg" class="svg_min" alt="">
-                            <img src="images/icon/star.svg" class="svg_min" alt="">
-                            <img src="images/icon/star.svg" class="svg_min" alt="">
-                            <img src="images/icon/star.svg" class="svg_min" alt="">
-                        </div>
-                    </article>
+                        <figcaption>
+                            <h3>Hôtel Le soleil du matin</h3>
+                            <p>Nuit à partir de 128<strong>&euro;</strong></p>
+                        </figcaption>
+                    </figure>
+                    <span>
+                        <img src="images/icon/star.svg" class="svg_min" alt="">
+                        <img src="images/icon/star.svg" class="svg_min" alt="">
+                        <img src="images/icon/star.svg" class="svg_min" alt="">
+                        <img src="images/icon/star.svg" class="svg_min" alt="">
+                        <img src="images/icon/star.svg" class="svg_min" alt="">
+                    </span>
 
-                    <article>
+                    <figure>
                         <img src="images/hebergements/CH_coeur_eau.jpg" alt="">
-                        <h3>Au coeur de l'eau Chambre d'hotes</h3>
-                        <p>Nuit à partir de 71€</p>
-                        <div>
-                            <img src="images/icon/star.svg" class="svg_min" alt="">
-                            <img src="images/icon/star.svg" class="svg_min" alt="">
-                            <img src="images/icon/star.svg" class="svg_min" alt="">
-                            <img src="images/icon/star.svg" class="svg_min" alt="">
-                            <img src="images/icon/star.svg" class="svg_min" alt="">
-                        </div>
-                    </article>
+                        <figcaption>
+                            <h3>Au coeur de l'eau Chambre d'hotes</h3>
+                            <p>Nuit à partir de 71<strong>&euro;</strong></p>
+                        </figcaption>
+                    </figure>
+                    <span>
+                        <img src="images/icon/star.svg" class="svg_min" alt="">
+                        <img src="images/icon/star.svg" class="svg_min" alt="">
+                        <img src="images/icon/star.svg" class="svg_min" alt="">
+                        <img src="images/icon/star.svg" class="svg_min" alt="">
+                        <img src="images/icon/star.svg" class="svg_min" alt="">
+                    </span>
 
-                    <article>
+                    <figure>
                         <img src="images/hebergements/hotel_bleu_blanc.jpg" alt="">
-                        <h3>Hôtel Tout bleu et Blanc</h3>
-                        <p>Nuit à partir de 68€</p>
-                        <div>
-                            <img src="images/icon/star.svg" class="svg_min" alt="">
-                            <img src="images/icon/star.svg" class="svg_min" alt="">
-                            <img src="images/icon/star.svg" class="svg_min" alt="">
-                            <img src="images/icon/star.svg" class="svg_min" alt="">
-                            <img src="images/icon/star.svg" class="svg_min" alt="">
-                        </div>
-                </article>
-            </div>
+                        <figcaption>
+                            <h3>Hôtel Tout bleu et Blanc</h3>
+                            <p>Nuit à partir de 68<strong>&euro;</strong></p>
+                        </figcaption>
+                    </figure>
+                    <span>
+                        <img src="images/icon/star.svg" class="svg_min" alt="">
+                        <img src="images/icon/star.svg" class="svg_min" alt="">
+                        <img src="images/icon/star.svg" class="svg_min" alt="">
+                        <img src="images/icon/star.svg" class="svg_min" alt="">
+                        <img src="images/icon/star.svg" class="svg_min" alt="">
+                    </span>
+                </div>
         </aside>
 
         <section>

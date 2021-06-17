@@ -8,11 +8,14 @@ body {
     font-weight: 500;
     width: 80%;
     margin: auto;
-    /*border: 1px solid black;*/
 }
 .svg {
     width: 20px;
     height: 20px;
+}
+.svg_med {
+    width: 16px;
+    height: 16px;
 }
 .svg_min {
     width: 12px;
@@ -22,14 +25,16 @@ h1 {
     font-size: 1.4em;
 }
 
+/*####################*/
 /* HEADER */
+/*####################*/
 
 header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: baseline;
-    margin-top: -16px;
+    margin-bottom: 50px;
 }
 header img {
     position: relative;
@@ -41,22 +46,20 @@ header div {
     list-style-type: none;
     align-items: baseline;
 }
-header ul {
+header nav {
     display: flex;
     justify-content: space-around;
+    align-items: baseline;
     flex-direction: row;
-    list-style-type: none;
 }
-header li {
+.hmenu {
     border-top: 3px solid rgba(0, 0, 0, 0);
     padding-top: 35px;
-    display: flex;
+    text-align: center;
     width: 8em;
 }
-header li a:hover {
+.hmenu:hover {
     color: #0065FC;
-}
-header li:hover {
     border-top: 3px solid #0065FC;
 }
 header a {
@@ -69,8 +72,9 @@ header a {
     font-weight: bold;
 }
 
-
+/*####################*/
 /* NAVIGATION */
+/*####################*/
 
 .nav_form {
     display: flex;
@@ -80,7 +84,7 @@ header a {
 }
 form img {
     background-color: #f2f2f2;
-    padding: 14px 14px 14px 14px;
+    padding: 12px 12px 12px 12px;
     border-radius: 1em 0 0 1em;
 }
 input {
@@ -101,7 +105,7 @@ input {
     justify-content: space-between;
     max-width: 60%;
     font-weight: bold;
-    margin-top: 50px;
+    margin-top: 20px;
 }
 .filtre_sel {
     display: flex;
@@ -127,4 +131,34 @@ input {
 }
 .filtre a:hover {
     color: #0065FC;
+}
+.info {
+    display: flex;
+    justify-content: baseline;
+    margin-top: 20px;
+}
+.info img {
+    border: 1px solid #cfcfcf;
+    border-radius: 100%;
+    padding: 3px 3px 3px 3px;
+    margin-right: 10px;
+}
+
+/*####################*/
+/* MAIN */
+/*####################*/
+
+#hebergements {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#hebergements img {
+    max-width: 300px;
+}
+#hebergements h2 {
+    align-self: flex-start;
+}
+#hebergements figure {
+    align-self: flex-end;
 }
