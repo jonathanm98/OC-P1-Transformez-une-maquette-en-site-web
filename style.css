@@ -3,13 +3,26 @@
     src: url("font/Raleway-Regular.ttf") format('truetype');
 }
 
+/* Reset (basique)*/
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: "raleway";
     /* font-weight: 500; */
     font-size: 18px;
+    /* width: 80%; */
+}
+    
+.contenu {
     width: 80%;
     margin: auto;
 }
+
 .svg {
     width: 20px;
     height: 20px;
