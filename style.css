@@ -36,21 +36,22 @@ header {
     align-items: baseline;
     margin-bottom: 50px;
 }
+
 header img {
-    position: relative;
+    /* position: relative; */
     top: 20px;
 }
-header div {
+/* header div {
     display: flex;
     flex-direction: row;
     list-style-type: none;
     align-items: baseline;
-}
+} */
 header nav {
     display: flex;
     justify-content: space-around;
     align-items: baseline;
-    flex-direction: row;
+    /* flex-direction: row; */
 }
 header a {
     text-decoration: none;
@@ -161,4 +162,9 @@ input {
 }
 #hebergements figure {
     align-self: flex-end;
+}
+
+
+.bordure {
+    border: solid 1px red;
 }
