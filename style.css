@@ -73,9 +73,9 @@ header a {
 }
 header nav a {
     border-top: 2px solid rgba(0, 0, 0, 0);
-    padding-top: 35px;
+    padding-top: 48px;
     text-align: center;
-    width: 8em;
+    width: 9.8em;
 }
 header nav a:hover {
     color: #0065FC;
