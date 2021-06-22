@@ -1,10 +1,10 @@
 @font-face {
-    font-family: (raleway);
-    src: url("font/Raleway-Medium.ttf") format('ttf');
+    font-family: "raleway";
+    src: url("font/Raleway-Regular.ttf") format('truetype');
 }
 
 body {
-    font-family: raleway;
+    font-family: "raleway";
     font-weight: 500;
     width: 80%;
     margin: auto;
