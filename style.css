@@ -3,6 +3,10 @@
     src: url("font/Raleway-Regular.ttf") format('truetype');
 }
 
+.bordure {
+    /* border: solid 1px red; */
+}
+
 /* Reset (basique)*/
 * {
     margin: 0;
@@ -178,6 +182,4 @@ input {
 }
 
 
-.bordure {
-    border: solid 1px red;
-}
+
