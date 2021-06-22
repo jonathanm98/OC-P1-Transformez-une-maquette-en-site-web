@@ -1,6 +1,6 @@
 @font-face {
     font-family: "raleway";
-    src: url("font/Raleway-Regular.ttf") format('truetype');
+    src: url("font/Raleway-Regular.ttf") format('truetyp');
 }
 
 body {
@@ -52,20 +52,20 @@ header nav {
     align-items: baseline;
     flex-direction: row;
 }
-.hmenu {
-    border-top: 3px solid rgba(0, 0, 0, 0);
-    padding-top: 35px;
-    text-align: center;
-    width: 8em;
-}
-.hmenu:hover {
-    color: #0065FC;
-    border-top: 3px solid #0065FC;
-}
 header a {
     text-decoration: none;
     color: black;
     margin-right: 10px;
+}
+header nav a {
+    border-top: 2px solid rgba(0, 0, 0, 0);
+    padding-top: 35px;
+    text-align: center;
+    width: 8em;
+}
+header nav a:hover {
+    color: #0065FC;
+    border-top: 2px solid #0065FC;
 }
 .register {
     color: #0065FC;
