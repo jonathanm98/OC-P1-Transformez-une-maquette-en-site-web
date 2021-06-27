@@ -17,17 +17,14 @@ body {
 }
     
 .contenu {
-    width: 80%;
+    width: 85%;
     margin: auto;
 }
-
-.svg {
-    width: 28px;
-    height: 28px;
-}
 .svg_med {
-    width: 18px;
-    height: 18px;
+    min-width: 18px;
+    max-width: 18px;
+    min-height: 18px;
+    max-height: 18px;
 }
 .svg_min {
     width: 12px;
@@ -35,7 +32,7 @@ body {
 }
 
 h1 {
-    font-size: 1.4em;
+    font-size: 1.42em;
 }
 
 a {
@@ -43,9 +40,7 @@ a {
     color: black;
 }
 
-/*####################*/
 /* HEADER */
-/*####################*/
 
 header {
     display: flex;
@@ -54,7 +49,6 @@ header {
     align-items: baseline;
     margin-bottom: 50px;
 }
-
 header nav {
     display: flex;
     justify-content: space-around;
@@ -79,33 +73,32 @@ header nav a:hover {
     font-weight: bold;
 }
 
-/*####################*/
 /* NAVIGATION */
-/*####################*/
 
-.titre p {
-    margin-top: 16px;
+.titre h1 {
+    margin-bottom: 8px;
 }
 .nav_top {
-    margin-top: 22px;
+    margin-top: 19px;
 }
 .nav_form {
     display: flex;
     justify-content: flex-start;
     height: 50px;
-
 }
-form img {
+form i {
     background-color: #f2f2f2;
-    padding: 16px 16px 16px 16px;
+    padding: 16px 18px 16px 18px;
+    font-size: 18px;
     border-radius: 1em 0 0 1em;
 }
 input {
     border: none;
-    font-weight: 700;
+    font-size: 1.1em;
+    font-weight: bold;
 }
 #search {
-    border: 1px solid #F2F2F2;
+    border: 1px solid #f2f2f2;
     width: 235px;
 }
 .form_summ {
@@ -123,6 +116,7 @@ input {
     max-width: 60%;
     font-weight: bold;
     margin-top: 32px;
+    margin-left: 8px;
 }
 .filtre_sel {
     display: flex;
@@ -133,21 +127,25 @@ input {
     border-radius: 200px;
     text-decoration: none;
     color: black;
-    max-height: 38px;
+    height: 50px;
 }
 .f4 {
     min-width: fit-content;
 }
-.filtre_sel img {
-    padding: 10px 10px 10px 10px;
+.filtre_sel i {
+    padding: 16px 16px 16px 16px;
     background-color: #DEEBFF;
+    font-size: 20px;
     border-radius: 100%;
+    color: #0065FC;
 }
 .filtre_sel p {
     padding: 0 10px 0 10px;
+    font-weight: bold;
 }
 .filtre a:hover {
     color: #0065FC;
+    background-color: #f2f2f2;
 }
 .info {
     display: flex;
@@ -161,9 +159,7 @@ input {
     margin-right: 10px;
 }
 
-/*####################*/
 /* MAIN */
-/*####################*/
 
 #hebergements {
     display: flex;
