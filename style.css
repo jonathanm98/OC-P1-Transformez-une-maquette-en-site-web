@@ -3,10 +3,6 @@
     src: url("font/Raleway-Regular.ttf") format('truetype');
 }
 
-.bordure {
-    /* border: solid 1px red; */
-}
-
 /* Reset (basique)*/
 * {
     margin: 0;
@@ -17,9 +13,7 @@
 
 body {
     font-family: "raleway";
-    /* font-weight: 500; */
     font-size: 1em;
-    /* width: 80%; */
 }
     
 .contenu {
@@ -28,12 +22,12 @@ body {
 }
 
 .svg {
-    width: 20px;
-    height: 20px;
+    width: 28px;
+    height: 28px;
 }
 .svg_med {
-    width: 16px;
-    height: 16px;
+    width: 18px;
+    height: 18px;
 }
 .svg_min {
     width: 12px;
@@ -59,10 +53,6 @@ header {
     justify-content: space-between;
     align-items: baseline;
     margin-bottom: 50px;
-}
-
-header img {
-    top: 20px;
 }
 
 header nav {
@@ -93,15 +83,21 @@ header nav a:hover {
 /* NAVIGATION */
 /*####################*/
 
+.titre p {
+    margin-top: 16px;
+}
+.nav_top {
+    margin-top: 22px;
+}
 .nav_form {
     display: flex;
     justify-content: flex-start;
-    height: 40px;
+    height: 50px;
 
 }
 form img {
     background-color: #f2f2f2;
-    padding: 12px 12px 12px 12px;
+    padding: 16px 16px 16px 16px;
     border-radius: 1em 0 0 1em;
 }
 input {
@@ -110,20 +106,23 @@ input {
 }
 #search {
     border: 1px solid #F2F2F2;
+    width: 235px;
 }
 .form_summ {
     border-radius: 0 1em 1em 0;
     background-color: #0065FC;
     color: #fff;
     cursor: pointer;
+    width: 135px;
 }
 
 .filtre {
     display: flex;
     justify-content: space-between;
+    align-content: baseline;
     max-width: 60%;
     font-weight: bold;
-    margin-top: 20px;
+    margin-top: 32px;
 }
 .filtre_sel {
     display: flex;
