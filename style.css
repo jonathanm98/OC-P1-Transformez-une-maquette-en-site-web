@@ -134,7 +134,7 @@ input {
 .filtre_sel i {
     padding: 15px 15px 15px 15px;
     background-color: #DEEBFF;
-    min-height: 49px;
+    min-height: 50px;
     min-width: 50px;
     text-align: center;
     vertical-align: middle;
@@ -149,7 +149,6 @@ input {
 .filtre a:hover {
     color: #0065FC;
     background-color: #f2f2f2;
-    border: 2px solid #0065FC;
 }
 .info {
     display: flex;
@@ -167,20 +166,53 @@ input {
 
 /* MAIN */
 
+.fa-star {
+    font-size: 0.8em;
+}
+
+.hebergements {
+    display: flex;
+    margin-top: 50px;
+}
+
 #hebergements {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    max-width: 60%;
+    margin-right: 40px;
+    background-color: #F2F2F2;
 }
-#hebergements img {
-    max-width: 300px;
+.hebergements article {
+    background-color: white;
+    border-radius: 1em;
+    box-shadow: 10px black;
+}
+.hebergements i {
+    margin: 2px 2px 0px 2px;
+}
+.hebergements img {
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+    padding: 5px 5px 0 5px ;
+}
+.hebergements figcaption {
+    padding-left: 10px;
+}
+.hebergements span {
+    padding-left: 10px;
+    padding-bottom: 11px;
 }
 #hebergements h2 {
-    align-self: flex-start;
+    padding-right: 60%;
 }
-#hebergements figure {
-    align-self: flex-end;
+#populaires {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+    padding-left: 10px;
+    background-color: #F2F2F2;
 }
-
-
-
