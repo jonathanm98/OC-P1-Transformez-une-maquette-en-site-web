@@ -112,8 +112,7 @@ input {
 .filtre {
     display: flex;
     justify-content: space-between;
-    align-content: baseline;
-    max-width: 60%;
+    max-width: 67%;
     font-weight: bold;
     margin-top: 32px;
     margin-left: 8px;
@@ -122,7 +121,7 @@ input {
     display: flex;
     align-items: center;
     flex-wrap: nowrap;
-    margin-left: 30px;
+    margin-left: 36px;
     border: 2px solid #F2F2F2;
     border-radius: 200px;
     text-decoration: none;
@@ -133,29 +132,36 @@ input {
     min-width: fit-content;
 }
 .filtre_sel i {
-    padding: 16px 16px 16px 16px;
+    padding: 15px 15px 15px 15px;
     background-color: #DEEBFF;
+    min-height: 49px;
+    min-width: 50px;
+    text-align: center;
+    vertical-align: middle;
     font-size: 20px;
     border-radius: 100%;
     color: #0065FC;
 }
 .filtre_sel p {
     padding: 0 10px 0 10px;
-    font-weight: bold;
+    font-size: 1.13em;
 }
 .filtre a:hover {
     color: #0065FC;
     background-color: #f2f2f2;
+    border: 2px solid #0065FC;
 }
 .info {
     display: flex;
     justify-content: baseline;
     margin-top: 20px;
 }
-.info img {
+.info i {
+    color: #0065FC;
+    font-size: 0.6em;
     border: 1px solid #cfcfcf;
     border-radius: 100%;
-    padding: 3px 3px 3px 3px;
+    padding: 4px 6px 4px 6px;
     margin-right: 10px;
 }
 
