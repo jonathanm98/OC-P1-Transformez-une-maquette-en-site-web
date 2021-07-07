@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            box-sizing: border-box;
+        }
+        .bordure {
+            border: solid 1px red;
+        }
+        .grille {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 20px;
+            padding-bottom: 0;
+        }
+        .hebergement {
+            width: 100%;
+        }
+        .populaire {
+            width: 100%;
+            padding: 0 20px;
+
+        }
+        .hebergement a, .populaire a {
+            display: block;
+            width: 100%;
+            margin-bottom:5px;
+        }
+        .bloc-haut {
+            display: flex;
+            flex-direction: column-reverse;
+            /* flex-wrap: wrap; */
+            justify-content: space-between;
+        }
+        @media screen and (min-width:600px) {
+            .bloc-haut {
+                flex-direction: column;
+            }
+            .hebergement a {
+                width: 32%;
+                margin-bottom:4vw;
+            }
+            .populaire a {
+                margin-bottom:20px;
+            }
+        }
+
+        @media screen and (min-width:900px) {
+            .bloc-haut {
+                flex-direction: row;
+            }
+            .hebergement {
+                width: 70%;
+            }
+            .populaire {
+                width: 30%;
+            }
+            .hebergement a {
+                width: 32%;
+                margin-bottom:2vw;
+            }
+            .populaire a {
+                margin-bottom: 20px;
+            }
+        }        
+    </style>
+</head>
+<body>
+    <div class="bloc-haut">
+        <section class="hebergement">
+            <h2>Hébergements</h2>
+            <div class="grille bordure">
+                
+                <a href="#" class="bordure">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat inventore, temporibus, laborum officia aperiam et sunt ad molestias deserunt ipsa, quas aliquam expedita ipsum non ut maiores dicta provident similique.
+                </a>
+                <a href="#" class="bordure">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat inventore, temporibus, laborum officia aperiam et sunt ad molestias deserunt ipsa, quas aliquam expedita ipsum non ut maiores dicta provident similique.
+                </a>
+                <a href="#" class="bordure">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat inventore, temporibus, laborum officia aperiam et sunt ad molestias deserunt ipsa, quas aliquam expedita ipsum non ut maiores dicta provident similique.
+                </a>
+                <a href="#" class="bordure">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat inventore, temporibus, laborum officia aperiam et sunt ad molestias deserunt ipsa, quas aliquam expedita ipsum non ut maiores dicta provident similique.
+                </a>
+                <a href="#" class="bordure">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat inventore, temporibus, laborum officia aperiam et sunt ad molestias deserunt ipsa, quas aliquam expedita ipsum non ut maiores dicta provident similique.
+                </a>
+                <a href="#" class="bordure">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat inventore, temporibus, laborum officia aperiam et sunt ad molestias deserunt ipsa, quas aliquam expedita ipsum non ut maiores dicta provident similique.
+                </a>
+
+            </div>
+        </section>
+        <aside class="populaire">
+            <h2>Populaires</h2>
+            <a href="#" class="bordure">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat inventore, temporibus, laborum officia aperiam et sunt ad molestias deserunt ipsa, quas aliquam expedita ipsum non ut maiores dicta provident similique.
+            </a>
+            <a href="#" class="bordure">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat inventore, temporibus, laborum officia aperiam et sunt ad molestias deserunt ipsa, quas aliquam expedita ipsum non ut maiores dicta provident similique.
+            </a>
+            <a href="#" class="bordure">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat inventore, temporibus, laborum officia aperiam et sunt ad molestias deserunt ipsa, quas aliquam expedita ipsum non ut maiores dicta provident similique.
+            </a>
+
+        </aside>   
+    </div> 
+</body>
+</html>
