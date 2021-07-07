@@ -11,6 +11,7 @@
     box-sizing: border-box;
 }
 
+/* balises diverses */
 body {
     font-family: "raleway";
     font-size: 1em;
@@ -78,10 +79,10 @@ header nav a:hover {
 .titre h1 {
     margin-bottom: 8px;
 }
-.nav_top {
+.recherche {
     margin-top: 19px;
 }
-.nav_form {
+.recherche_form {
     display: flex;
     justify-content: flex-start;
     height: 50px;
@@ -175,7 +176,6 @@ input {
 
 .hebergements {
     display: flex;
-    min-width: 880px;
 }
 
 #hebergements {
@@ -185,6 +185,7 @@ input {
     padding: 0 38px 0 38px;
     border-radius: 1em 1em 1em 1em;
     background-color: #F2F2F2;
+    margin-right: 40px;
 }
 #hebergements div {
     display: flex;
@@ -196,9 +197,13 @@ input {
 #hebergements article {
     background-color: white;
     border-radius: 1em;
-    min-width: 246px;
+    /* min-width: 246px; */
     min-height: 200px;
     box-shadow: 0px 0px 10px #c9c9c9;
+    margin-bottom: 30px;
+}
+#hebergement a {
+    width: 30%;
 }
 #hebergements i {
     margin: 2px 2px 0px 2px;
@@ -220,21 +225,44 @@ input {
     padding-top: 46px;
     padding-bottom: 22px;
 }
-#populaires {
-    display: flex;
-    flex-direction: column;
-    min-height: 626px;
-    padding-left: 10px;
-    margin-top: 50px;
-    border-radius: 1em 1em 1em 1em;
-    background-color: #F2F2F2;
+#hebergements h3 {
+    font-size: 1em;
+}
+#hebergements p {
+    font-size: 0.9em;
+}
+#hebergements i {
+    font-size: 0.7em;
 }
 #populaires {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-content: center;
-
+    min-height: 626px;
+    min-width: 420px;
+    padding-left: 10px;
+    margin-top: 50px;
+    border-radius: 1em 1em 1em 1em;
+    background-color: #F2F2F2;
+}
+#populaires h2 {
+    display: inline-block;
+    padding-top: 46px;
+    padding-bottom: 22px;
+}
+#populaires a {
+    max-width: 340px;
+    margin: auto    ;
+}
+#populaires h3 {
+    font-size: 1em;
+}
+#populaires p {
+    font-size: 0.9em;
+}
+#populaires figure i {
+    font-size: 0.7em;
 }
 #populaires figure {
     display: flex;
@@ -246,4 +274,13 @@ input {
     border-top-left-radius: 1em;
     border-bottom-left-radius: 1em;
     padding: 5px;
+}
+#populaire figcaption {
+    margin-right: 10px
+}
+.activites {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: space-around;
 }
