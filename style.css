@@ -41,6 +41,18 @@ a {
     color: black;
 }
 
+/* TELEPHONE */
+@media (max-width: 767.98px) { 
+    .hebergements {
+        flex-direction: column-reverse;
+    }
+}
+
+/* TABLETTES */
+@media (max-width: 991.98px) { 
+    
+}
+
 /* HEADER */
 
 header {
@@ -113,6 +125,7 @@ input {
 .filtre {
     display: flex;
     justify-content: space-between;
+    align-items: baseline;
     max-width: 67%;
     font-weight: bold;
     margin-top: 32px;
@@ -174,6 +187,8 @@ input {
     color: #f2f2f2;
 }
 
+/* Section hébergements */
+
 .hebergements {
     display: flex;
 }
@@ -234,53 +249,107 @@ input {
 #hebergements i {
     font-size: 0.7em;
 }
-#populaires {
+
+/* Section populaires */
+
+.populaires {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    /* justify-content: start; */
     align-content: center;
     min-height: 626px;
     min-width: 420px;
-    padding-left: 10px;
     margin-top: 50px;
     border-radius: 1em 1em 1em 1em;
     background-color: #F2F2F2;
 }
+#populaires {
+    display: flex;
+    flex-direction: row;
+}
+.fa-chart-line {
+    float: right;
+    font-size: 0.8em;
+    line-height: 30px;
+}
 #populaires h2 {
-    display: inline-block;
-    padding-top: 46px;
-    padding-bottom: 22px;
+    width: 90%;
+    margin: 30px auto;
 }
-#populaires a {
-    max-width: 340px;
-    margin: auto    ;
+.populaires a {
+    width: 90%;
+    margin: auto;
 }
-#populaires h3 {
+.populaires h3 {
     font-size: 1em;
 }
-#populaires p {
+.populaires p {
     font-size: 0.9em;
 }
-#populaires figure i {
+.populaires figure i {
     font-size: 0.7em;
 }
-#populaires figure {
+.populaires figure {
     display: flex;
     background-color: white;
     border-radius: 1em;
     box-shadow: 0px 0px 10px #c9c9c9;
 }
-#populaires img {
+.populaires img {
     border-top-left-radius: 1em;
     border-bottom-left-radius: 1em;
     padding: 5px;
 }
-#populaire figcaption {
+.populaire figcaption {
     margin-right: 10px
 }
+
+/* Section activités */
+
 .activites {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+.activites img {
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+}
+.activites h4 {
+    padding: 20px 0 20px 20px;
+}
+.act2 {
+    display: block;
+    box-shadow: 0px 0px 10px #c9c9c9;
+    border-radius: 1em 1em 1em 1em;
+}
+.act1 {
+    box-shadow: 0px 0px 10px #c9c9c9;
+    border-radius: 1em 1em 1em 1em;
+}
+.double {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #f2f2f2;
+    padding: 50px 0 50px 0;
+    margin-top: 60px;
+}
+footer nav {
+    display: flex;
     justify-content: space-around;
-    align-content: space-around;
+}
+footer li {
+    list-style-type: none;
+    padding-top: 15px;
+}
+footer h4 {
+    padding: 0 0 10px 0;
 }
