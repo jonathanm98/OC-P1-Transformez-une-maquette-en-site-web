@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            border: 0;
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .bordure {
+            border: solid 1px red;
+        }
+        .conteneur {
+            /* display: flex; */
+        }
+        nav ul {
+            display: flex;
+            /* margin-top: 20px; */
+        }
+        nav ul li {
+            /* display: block; */
+            width: 50%;
+        }
+        .inscription {
+            float: right;
+        }
+        @media screen and (min-width: 768px) {
+            .conteneur {
+                display: flex;
+                justify-content: space-between;
+            }
+            nav {
+                justify-content: flex-end
+            }
+            .inscription {
+                order: 3;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="conteneur bordure">
+        <div class="inscription bordure">S'inscrire</div>
+        <div class="logo bordure">Logo</div>
+        <nav class="bordure">
+            <ul class="bordure">
+                <li class="bordure">Item 1</li>
+                <li class="bordure">Item 2</li>
+            </ul>
+        </nav>
+        
+    </div>
+</body>
+</html>

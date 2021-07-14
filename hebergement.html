@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/348505a5ae.js" crossorigin="anonymous"></script>
+    <style>
+        
+        @font-face {
+            font-family: "raleway";
+            src: url("font/Raleway-Regular.ttf") format('truetype');
+        }
+
+        /* Reset (basique)*/
+        * {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            box-sizing: border-box;
+        }
+
+        /* balises diverses */
+        body {
+            font-family: "raleway";
+            font-size: 1em;
+        }
+
+        .bordure {
+            border: solid 1px red;
+        }
+
+        .conteneur {
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column-reverse;
+        }
+
+        .hebergements, .populaires {           
+            /* width: 100%; */
+            padding: 0 20px;
+        }
+
+        .hebergement, .populaire {
+            margin: 1vw 0;
+        }
+        /* .hebergement {           
+            width: 100%;
+        }
+        .populaire {
+            width: 100%;
+        } */
+        .grille {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: flex-start;               
+        }
+
+        .hebergement img {
+            border-top-left-radius: 1em;
+            border-top-right-radius: 1em;
+            padding: 5px 5px 0 5px ;
+            width: 100%;
+            height: 114px;
+            object-fit: cover;
+            top: 50%;
+	        left: 50%;
+        }        
+        .hebergement figcaption {
+            padding-left: 10px;
+        }        
+
+        .hebergement article {
+            background-color: white;
+            border-radius: 1em;
+            min-height: 200px;
+            box-shadow: 0px 0px 10px #c9c9c9;
+            margin-bottom: 30px;
+        }
+        .hebergement i {
+            margin: 2px 2px 0px 2px;
+            font-size: 0.7em;
+        }
+
+        .hebergement h2 {
+            display: inline-block;
+            padding-top: 46px;
+            padding-bottom: 22px;
+        }
+        .hebergement h3 {
+            font-size: 1em;
+        }
+        .hebergement p {
+            font-size: 0.9em;
+        }
+        .populaires figure {
+            display: flex;
+        }
+        .populaire {
+            width: 100%;
+        }
+
+        @media screen and (min-width: 768px) {
+
+            /* .hebergements {           
+                width: 70%;
+            }
+
+            .populaires {
+                width: 30%;
+            } */
+
+            .hebergement, .populaire {
+                width: 49%;
+            }
+
+
+        }
+
+        @media screen and (min-width: 992px) {
+
+            .conteneur {
+                flex-direction: row;
+            }
+
+            .hebergements {           
+                width: 70%;
+            }
+
+            .populaires {
+                width: 30%;
+            }
+
+            .hebergement {
+                width: 31%;
+            }
+            .populaire {
+                width: 100%;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="conteneur bordure">
+        <section class="hebergements bordure">
+            <h2 class="bordure">Titre</h2>
+            <div class="grille bordure">
+                <a href="#" class="bordure hebergement">
+                    <article>
+                        <figure>
+                            <img src="images/hebergements/auberge_cannebiere.jpg" alt="">
+                            <figcaption>
+                                <h3>Auberge la Cannebière</h3>
+                                <p>Nuit à partir de <strong>25&euro;</strong></p>        
+                            </figcaption>
+                        </figure>
+                        
+                        <span>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star grey"></i>
+                        </span>
+                    </article>
+                </a>
+                <a href="#" class="bordure hebergement">
+                    <article>
+                        <figure>
+                            <img src="images/hebergements/hotel_port.jpg" alt="">
+                            <figcaption>
+                                <h3>Hôtel du port</h3>
+                                <p>Nuit à partir de 52<strong>&euro;</strong></p>
+                            </figcaption>
+                        </figure>
+                        <span>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </span>
+                    </article>
+                </a>
+
+                
+                <a href="#" class="bordure hebergement">
+                    <article>
+                        <figure>
+                            <img src="images/hebergements/hotel_mouette.jpg" alt="">
+                            <figcaption>
+                                <h3>Hôtel Les mouettes</h3>
+                                <p>Nuit à partir de 76<strong>&euro;</strong></p>
+                            </figcaption>
+                        </figure>
+                        <span>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star grey"></i>
+                        </span>
+                    </article>
+                </a>
+
+
+                <a href="#" class="bordure hebergement">
+                    <article>
+                        <figure>
+                            <img src="images/hebergements/hotel_mer.jpg" alt="">
+                            <figcaption>
+                                <h3>Hôtel de la mer</h3>
+                                <p>Nuit à partir de 46<strong>&euro;</strong></p>
+                            </figcaption>
+                        </figure>
+                        <span>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star grey"></i>
+                            <i class="fas fa-star grey"></i>
+                        </span>
+                    </article>
+                </a>
+
+
+                <a href="#" class="bordure hebergement">
+                    <article>
+                        <figure>
+                            <img src="images/hebergements/auberge_panier.jpg" alt="">
+                            <figcaption>
+                                <h3>Auberge Le Panier</h3>
+                                <p>Nuit à partir de <strong>23&euro;</strong></p>
+                            </figcaption>
+                        </figure>
+                        <span>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star grey"></i>
+                        </span>
+                    </article>
+                </a>
+
+
+                <a href="#" class="bordure hebergement">                        
+                    <article>
+                        <figure>
+                            <img src="images/hebergements/hotel_amina.jpg" alt="">
+                            <figcaption>
+                                <h3>Hôtel ches Amina</h3>
+                                <p>Nuit à partir de 96<strong>&euro;</strong></p>
+                            </figcaption>
+                        </figure>
+                        <span>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </span>
+                    </article>
+                </a>            
+            </div>
+        </section>
+        <aside class="populaires bordure">
+            <h2 class="bordure">Titre</h2>
+            <div class="grille bordure">
+                <a href="#" class="bordure populaire">
+                    <figure>
+                        <img src="images/hebergements/hotel_soleil_min.jpg" alt="">
+                        <figcaption>
+                            <h3>Hôtel Le soleil du matin</h3>
+                            <p>Nuit à partir de 128<strong>&euro;</strong></p>
+                            <span>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </span>
+                        </figcaption>
+                    </figure>
+                </a>
+
+                <a href="#" class="bordure populaire">
+                    <figure>
+                        <img src="images/hebergements/CH_coeur_eau_min.jpg" alt="">
+                        <figcaption>
+                            <h3>Au coeur de l'eau Chambre d'hotes</h3>
+                            <p>Nuit à partir de 71<strong>&euro;</strong></p>
+                            <span>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star grey"></i>
+                            </span>
+                        </figcaption>
+                    </figure>
+                </a>
+
+                <a href="#" class="bordure populaire">
+                    <figure>
+                        <img src="images/hebergements/hotel_bleu_blanc_min.jpg" alt="">
+                        <figcaption>
+                            <h3>Hôtel Tout bleu et Blanc</h3>
+                            <p>Nuit à partir de 68<strong>&euro;</strong></p>
+                            <span>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star grey"></i>
+                            </span>
+                        </figcaption>
+                    </figure>
+                </a>
+            </div>
+        </aside>
+    </div>
+</body>
+</html>
