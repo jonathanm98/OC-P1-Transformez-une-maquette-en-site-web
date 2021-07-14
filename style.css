@@ -144,7 +144,7 @@ input {
     display: flex;
     margin-top: 20px;
 }
-.info i {
+.fa-info {
     color: #0065FC;
     font-size: 0.6em;
     border: 1px solid #cfcfcf;
@@ -170,7 +170,7 @@ input {
 }
 
 #hebergements {
-    min-height: 626px;
+    /* min-height: 626px; */
     margin-top: 50px;
     padding: 0 38px;
     border-radius: 1em 1em 1em 1em;
@@ -202,6 +202,8 @@ input {
     border-top-left-radius: 1em;
     border-top-right-radius: 1em;
     padding: 5px 5px 0 5px ;
+    width: 235px;
+    height: 114px;
 }
 #hebergements figcaption {
     padding-left: 10px;
@@ -231,7 +233,8 @@ input {
     display: flex;
     flex-direction: column;
     align-content: center;
-    min-height: 626px;
+    width: 100%;
+    /* min-height: 626px; */
     margin-top: 50px;
     border-radius: 1em 1em 1em 1em;
     background-color: #F2F2F2;
@@ -239,7 +242,6 @@ input {
 #populaires {
     display: flex;
     flex-direction: row;
-    /* width: 30%; */
 }
 .fa-chart-line {
     float: right;
@@ -336,33 +338,68 @@ footer h4 {
 
 
 
-/* LAPTOP MIN */
-@media screen and (max-width: 1415px) {
+@media only screen and (max-width: 1415px) {
     #fullpage {
         width: 95%;
     }
 }
 
-/* TABLETTES */
-@media screen and (max-width: 992px) { 
+@media only screen and (max-width: 998px) { 
 
     .filtre {
         flex-wrap: wrap;
     }
+    .filtre_sel {
+        margin-top: 14px;
+    }
+    .fa-info {
+        white-space: nowrap;
+    }
+    .filtre h3 {
+        width: 100%;
+    }
     .hebergements {
         flex-direction: column-reverse;
+        width: 100%;
     }
     #hebergements {
         width: 100%;
     }
-    #populaires {
+    #hebergements a {
+        width: 49%;
+    }
+    #hebergements img {
         width: 100%;
+        height: 114px;
+        object-fit: cover;
+        top: 50%;
+        left: 50%;
+    }
+    .populaires {
+        width: 100%;
+        padding-top: 42px;
     }
 
 }
 
-/* TELEPHONE */
-@media screen and (max-width: 768px) {
 
+@media only screen and (max-width: 768px) {
 
+    #hebergements a {
+        width: 99%;
+    }
+    .activites {
+        flex-wrap: wrap;
+        
+    }
+    .act1, .act2, .double {
+        width: 25%;
+    }
+    footer nav {
+        flex-direction: column;
+        padding-left: 32px;
+    }
+    footer nav ul {
+        margin-bottom: 60px;
+    }
 }
