@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/logo/fav_logo.png" type="image/x-icon">
+    <title>Reservia</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.css"/>
+    <style>
+.recherche {
+    margin-top: 19px;
+}
+.recherche_form {
+    display: flex;
+    justify-content: flex-start;
+    height: 50px;
+}
+form .fa-map-marker-alt {
+    background-color: #f2f2f2;
+    padding: 16px 18px 18px 18px;
+    font-size: 18px;
+    border-radius: 1em 0 0 1em;
+}
+button {
+    border: none;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+#search {
+    border: 2px solid #f2f2f2;
+    width: 235px;
+}
+.form_summ {
+    border-radius: 0 1em 1em 0;
+    background-color: #0065FC;
+    color: #fff;
+    font-size: 1.1em;
+    cursor: pointer;
+    width: 135px;
+}
+.btn_icon {
+    display: none;
+}
+    @media screen and (max-width: 768px) {
+        .form_summ {
+            width: 50px;
+            border-radius: 1em;
+            margin-left: -1em;
+        }
+        .btn_icon {
+            display: initial;
+        }
+        .btn_text {
+            display: none;
+        }
+    }
+    </style>
+</head>
+<main>
+    <form action="#" method="post" class="recherche_form">
+        <label for="search"><i class="fas fa-map-marker-alt"></i></label> 
+        <input type="text" id="search" name="search" placeholder="   Marseille, France">
+        <button class="form_summ" type="submit" aria-label="Rechercher">
+        <span class="btn_text">Rechercher</span>
+        <i class="btn_icon fa fa-search"></i>
+        </button>
+    </form>
+</main>
