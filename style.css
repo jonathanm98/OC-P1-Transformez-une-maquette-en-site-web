@@ -71,7 +71,7 @@ header nav a:hover {
 .titre h1 {
     margin-bottom: 8px;
 }
-.recherche {
+.recherche_form {
     margin-top: 19px;
 }
 .recherche_form {
@@ -79,13 +79,13 @@ header nav a:hover {
     justify-content: flex-start;
     height: 50px;
 }
-form i {
+form .fa-map-marker-alt {
     background-color: #f2f2f2;
     padding: 16px 18px 16px 18px;
     font-size: 18px;
     border-radius: 1em 0 0 1em;
 }
-input {
+button {
     border: none;
     font-size: 1.1em;
     font-weight: bold;
@@ -101,15 +101,16 @@ input {
     cursor: pointer;
     width: 135px;
 }
-.form_summ_mobile {
-    display: none;
+.btn_icon {
+    display: none !important;
 }
 
 .filtre {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: baseline;
-    max-width: 67%;
+    max-width: 65%;
     font-weight: bold;
     margin-top: 32px;
     margin-left: 8px;
@@ -255,6 +256,7 @@ input {
 #populaires h2 {
     width: 90%;
     margin: auto;
+    padding-top: 20px;
 }
 .populaires a {
     width: 90%;
@@ -393,12 +395,39 @@ footer h4 {
     }
     .populaires {
         width: 100%;
-        min-height: 550px;
+        min-height: 600px;
         padding-top: 42px;
         padding-bottom: 42px;
     }
     .populaires h2 {
         padding-bottom: 20px;
+    }
+    .activites {
+        flex-wrap: wrap;
+        min-height: 700px;
+        justify-content: space-between;
+        align-content: space-between;
+    }
+    .activites img {
+        max-height: 134px;
+        width: 100%;
+        object-fit: cover;
+    }
+    .double {
+        width: 100%;
+        flex-direction: row;
+    }
+    .act1 {
+        width: 48%;
+    }
+    .act2 {
+        width: 48%;
+    }
+    .order1 {
+        order: 1;
+    }
+    .order2 {
+        order: 2;
     }
 
 }
@@ -431,13 +460,15 @@ footer h4 {
         border-bottom: 3px solid #0065FC;
     }
     .form_summ {
-        display: none;
+        width: 50px;
+        border-radius: 1em;
+        margin-left: -1em;
     }
-    .form_summ_mobile {
-        display: initial;
-        background-color: #0065FC;
-        /* color: #fff; */
-        cursor: pointer;
+    .btn_icon {
+        display: initial !important;
+    }
+    .btn_text {
+        display: none;
     }
 
     #hebergements a {
@@ -445,6 +476,7 @@ footer h4 {
     }
     .activites {
         flex-wrap: wrap;
+        min-height: 1500px;
     }
     .activites img {
         max-height: 134px;
@@ -453,9 +485,16 @@ footer h4 {
     }
     .double {
         width: 100%;
+        flex-wrap: wrap;
     }
-    .act1, .act2 {
+    .act1 {
         width: 100%;
+    }
+    .act2 {
+        width: 100%;
+    }
+    .padding_act {
+        margin-bottom: 60px;
     }
     footer nav {
         flex-direction: column;
