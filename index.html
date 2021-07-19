@@ -6,7 +6,7 @@
     <link rel="shortcut icon" href="images/logo/fav_logo.png" type="image/x-icon">
     <title>Reservia</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/348505a5ae.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.css"/>
 
 </head>
 <body>
@@ -26,13 +26,14 @@
                 <p>En plein centre ville ou en plaine nature</p>
             </section>
 
-            <section class="recherche">
-                <form action="#" method="post" class="recherche_form">
-                    <label for="search"><i class="fas fa-map-marker-alt"></i></label> 
-                    <input type="text" id="search" name="search" placeholder="   Marseille, France">
-                    <input type="submit" value="Rechercher" class="form_summ" />
-                    <button type="submit" class="form_summ_mobile"><i class="fas fa-search"></i></button>
-                </form>
+            <form action="#" method="post" class="recherche_form">
+                <label for="search"><i class="fas fa-map-marker-alt"></i></label> 
+                <input type="text" id="search" name="search" placeholder="   Marseille, France">
+                <button class="form_summ" type="submit" aria-label="Rechercher">
+                <span class="btn_text">Rechercher</span>
+                <i class="btn_icon fa fa-search"></i>
+                </button>
+            </form>
 
                 <section class="filtre">
                     <h3>Filtres</h3>
@@ -250,13 +251,13 @@
             <section id="activites">
                 <h2>Activités à Marseille</h2>
                 <div class="activites">
-                    <div class="act1">
+                    <div class="act1 order1">
                         <img src="images/activites/port.jpg" alt="">
                         <h4>Vieux port</h4>
                     </div>
                     
                     <div class="double">
-                        <div class="act2">
+                        <div class="act2 padding_act">
                             <img src="images/activites/fort.jpg" alt="">
                             <h4>Fort de Pomègues</h4>
                         </div>
@@ -266,13 +267,13 @@
                         </div>
                     </div>
 
-                    <div class="act1">
+                    <div class="act1 order2">
                         <img src="images/activites/parc_national.jpg" alt="">
                         <h4>Parc nationnal des Calanques</h4>
                     </div>
 
                     <div class="double">
-                        <div class="act2">
+                        <div class="act2 padding_act">
                             <img src="images/activites/cathedrale.jpg" alt="">
                             <h4>Notre-Dame-de-la-Garde</h4>
                         </div>
