@@ -43,7 +43,7 @@ header {
 }
 header nav {
     display: flex;
-    justify-content: flex-end;
+    margin-left: auto;
 }
 
 header nav a {
@@ -63,6 +63,7 @@ header nav a:hover {
     color: #0065FC;
     font-weight: bold;
     order: 3;
+    margin-left: 25px;
 }
 
 /* NAVIGATION */
@@ -99,6 +100,9 @@ input {
     color: #fff;
     cursor: pointer;
     width: 135px;
+}
+.form_summ_mobile {
+    display: none;
 }
 
 .filtre {
@@ -298,6 +302,7 @@ input {
 .activites img {
     border-top-left-radius: 1em;
     border-top-right-radius: 1em;
+    object-fit: cover;
 }
 .activites h4 {
     padding: 20px 0 20px 20px;
@@ -307,14 +312,25 @@ input {
     box-shadow: 0px 0px 10px #c9c9c9;
     border-radius: 1em 1em 1em 1em;
 }
+.act2 img {
+    height: 144px;
+    width: 302px;
+}
 .act1 {
     box-shadow: 0px 0px 10px #c9c9c9;
     border-radius: 1em 1em 1em 1em;
+}
+.act1 img {
+    height: 388px;
+    width: 302px;
 }
 .double {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+.act1 {
+    max-height: 390;
 }
 
 /* FOOTER */
@@ -377,7 +393,12 @@ footer h4 {
     }
     .populaires {
         width: 100%;
+        min-height: 550px;
         padding-top: 42px;
+        padding-bottom: 42px;
+    }
+    .populaires h2 {
+        padding-bottom: 20px;
     }
 
 }
@@ -385,15 +406,56 @@ footer h4 {
 
 @media only screen and (max-width: 768px) {
 
+    header {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .register {
+        order: 0;
+        /* float: right; */
+    }
+    .menu_h, .menu_a {
+        width: 50vmin;
+    }
+    header nav a {
+        border-top-style: none;
+        border-bottom: 3px solid #F2F2F2;
+        padding-bottom: 20px;
+        text-align: center;
+        width: 10em;
+    }
+    
+    header nav a:hover {
+        border-top-style: none;
+        color: #0065FC;
+        border-bottom: 3px solid #0065FC;
+    }
+    .form_summ {
+        display: none;
+    }
+    .form_summ_mobile {
+        display: initial;
+        background-color: #0065FC;
+        /* color: #fff; */
+        cursor: pointer;
+    }
+
     #hebergements a {
         width: 99%;
     }
     .activites {
         flex-wrap: wrap;
-        
     }
-    .act1, .act2, .double {
-        width: 25%;
+    .activites img {
+        max-height: 134px;
+        width: 100%;
+        object-fit: cover;
+    }
+    .double {
+        width: 100%;
+    }
+    .act1, .act2 {
+        width: 100%;
     }
     footer nav {
         flex-direction: column;
