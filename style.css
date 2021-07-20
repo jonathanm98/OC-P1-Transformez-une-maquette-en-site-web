@@ -156,6 +156,7 @@ button {
     border-radius: 100%;
     padding: 4px 6px 4px 6px;
     margin-right: 10px;
+    max-height: 20px;
 }
 
 /* MAIN */
@@ -331,9 +332,6 @@ button {
     flex-direction: column;
     justify-content: space-between;
 }
-.act1 {
-    max-height: 390;
-}
 
 /* FOOTER */
 
@@ -362,7 +360,7 @@ footer h4 {
     }
 }
 
-@media only screen and (max-width: 998px) { 
+@media only screen and (max-width: 1200px) { 
 
     .filtre {
         flex-wrap: wrap;
