@@ -41,6 +41,10 @@ header {
     align-items: baseline;
     margin-bottom: 50px;
 }
+header .logo {
+    margin-top: 15px;
+    display: block;
+}
 header nav {
     display: flex;
     margin-left: auto;
@@ -73,6 +77,12 @@ header nav a:hover {
 }
 .recherche_form {
     margin-top: 19px;
+}
+.recherche_form input {
+    padding-left: 15px;
+    font-family: "raleway", sans-serif;
+    font-size: 1em;
+    font-weight: bold;
 }
 .recherche_form {
     display: flex;
@@ -108,7 +118,6 @@ button {
 .filtre {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     align-items: baseline;
     max-width: 65%;
     font-weight: bold;
@@ -124,14 +133,17 @@ button {
     text-decoration: none;
     color: black;
     height: 50px;
+    margin-left: 25px;
 }
 .filtre_sel i {
     padding: 15px 15px 15px 15px;
     background-color: #DEEBFF;
-    min-height: 50px;
-    min-width: 50px;
+    height: 50px;
+    width: 50px;
+    line-height: 100%;
     text-align: center;
-    vertical-align: middle;
+    margin: auto;
+    white-space: nowrap;
     font-size: 20px;
     border-radius: 100%;
     color: #0065FC;
@@ -144,19 +156,23 @@ button {
 .filtre a:hover {
     color: #0065FC;
     background-color: #f2f2f2;
+    border: 2px solid #0065FC;
 }
 .info {
     display: flex;
     margin-top: 20px;
+    width: 100%;
 }
 .fa-info {
     color: #0065FC;
-    font-size: 0.6em;
+    font-size: 0.70em;
     border: 1px solid #cfcfcf;
     border-radius: 100%;
-    padding: 4px 6px 4px 6px;
     margin-right: 10px;
-    max-height: 20px;
+    height: 20px;
+    width: 20px;
+    line-height: 16.5px;
+    text-align: center;
 }
 
 /* MAIN */
@@ -176,7 +192,6 @@ button {
 }
 
 #hebergements {
-    /* min-height: 626px; */
     margin-top: 50px;
     padding: 0 38px;
     border-radius: 1em 1em 1em 1em;
@@ -198,7 +213,7 @@ button {
     box-shadow: 0px 0px 10px #c9c9c9;
     margin-bottom: 30px;
 }
-#hebergement a {
+.vgt {
     width: 30%;
 }
 #hebergements i {
@@ -208,8 +223,9 @@ button {
     border-top-left-radius: 1em;
     border-top-right-radius: 1em;
     padding: 5px 5px 0 5px ;
-    width: 235px;
+    width: 100%;
     height: 114px;
+    object-fit: cover;
 }
 #hebergements figcaption {
     padding-left: 10px;
@@ -310,14 +326,18 @@ button {
 .activites h4 {
     padding: 20px 0 20px 20px;
 }
+.act1, .double {
+    width: 24%;
+}
 .act2 {
     display: block;
     box-shadow: 0px 0px 10px #c9c9c9;
     border-radius: 1em 1em 1em 1em;
+    width: 96%;
 }
 .act2 img {
     height: 144px;
-    width: 302px;
+    width: 100%;
 }
 .act1 {
     box-shadow: 0px 0px 10px #c9c9c9;
@@ -325,7 +345,7 @@ button {
 }
 .act1 img {
     height: 388px;
-    width: 302px;
+    width: 100%;
 }
 .double {
     display: flex;
@@ -352,8 +372,6 @@ footer h4 {
     padding: 0 0 10px 0;
 }
 
-
-
 @media only screen and (max-width: 1415px) {
     #fullpage {
         width: 95%;
@@ -368,15 +386,8 @@ footer h4 {
     .filtre_sel {
         margin-top: 14px;
     }
-    .fa-info {
-        white-space: nowrap;
-    }
-    .filtre h3 {
-        width: 100%;
-    }
     .hebergements {
         flex-direction: column-reverse;
-        width: 100%;
     }
     #hebergements {
         width: 100%;
@@ -467,6 +478,13 @@ footer h4 {
     }
     .btn_text {
         display: none;
+    }
+
+    .filtre h3 {
+        width: 100%;
+    }
+    .filtre_sel {
+        margin-left: 0;
     }
 
     #hebergements a {
