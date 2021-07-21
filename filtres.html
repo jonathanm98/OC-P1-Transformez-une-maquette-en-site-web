@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.css"/>
+
+    <style>
+       @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+        * {
+            border: 0;
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Raleway';
+        }
+        .bordure {
+            border: solid 1px red;
+        }
+        .conteneur {
+            display: flex;
+            flex-direction: column;
+            align-items: baseline;
+        }
+        .filtres {
+            display: flex;
+            flex-wrap: wrap;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 5px;
+            list-style-type: none;
+        }
+        .filtres li {
+            /* flex-wrap:nowrap; */
+            white-space: nowrap;
+            overflow: hidden;
+        }
+        .info {
+            display: flex;
+            margin-top: 20px;
+        }
+        .fa-info {
+            color: #0065FC;
+            font-size: 0.70em;
+            border: 1px solid #cfcfcf;
+            border-radius: 100%;
+            /* padding: 4px 6px 4px 6px; */
+            margin-right: 10px;
+            height: 20px;
+            min-width: 20px;
+            line-height: 16.5px;
+            text-align: center;
+        }
+        @media screen and (min-width: 768px) {
+            .conteneur { 
+                flex-direction: row;
+            }
+            
+        }
+    </style>
+</head> 
+<body>
+    <div class="conteneur bordure">
+        <h3>Filtres</h3>
+        <ul class="filtres bordure">
+            <li class="bordure"><a href="#"><i class="fas fa-money-bill-wave"></i>Économique</a></li>
+            <li class="bordure"><a href="#"><i class="fas fa-child"></i>Familial</a></li>
+            <li class="bordure"><a href="#"><i class="fas fa-heart"></i>Romantique</a></li>
+            <li class="bordure"><a href="#"><i class="fas fa-dog"></i>Animaux autorisés</a></li>
+        </ul>
+        
+    </div>
+    <div class="info">
+        <i class="fas fa-info"></i>
+        <p>Plus de 500 logements sont disponibles dans cette ville</p>
+    </div>
+</body>
+</html>
