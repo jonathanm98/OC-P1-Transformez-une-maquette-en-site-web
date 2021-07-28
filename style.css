@@ -319,6 +319,11 @@ button {
 }
 .populaires figcaption {
     margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.populaires figcaption span {
+
 }
 
 /* Section activités */
@@ -522,6 +527,7 @@ footer h4 {
     }
     .filtre_sel {
         margin-left: 0;
+        margin-right: 25px;
     }
     #hebergements {
         background-color: #fff;
