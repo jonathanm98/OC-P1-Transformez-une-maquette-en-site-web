@@ -7,6 +7,9 @@
     <title>Reservia</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
 
 </head>
 <body>
@@ -36,23 +39,16 @@
             </form>
             
             <section class="filtre">
-                <h3>Filtres</h3>
-                <a href="#" class="filtre_sel">
-                    <i class="fas fa-money-bill-wave"></i>
-                    <p>Économique</p>
-                </a>
-                <a href="#" class="filtre_sel">
-                    <i class="fas fa-child"></i>
-                    <p>Familial</p>
-                </a>
-                <a href="#" class="filtre_sel">
-                    <i class="fas fa-heart"></i>
-                    <p>Romantique</p>
-                </a>
-                <a href="#" class="filtre_sel">
-                    <i class="fas fa-dog"></i>
-                    <p>Animaux autorisés</p>
-                </a>
+                <div class="conteneur">
+                    <h3>Filtres</h3>
+                    <ul class="filtres">
+                        <li class="filtre_sel"><a href="#"><i class="fas fa-money-bill-wave"></i><p class="filtre_p">Économique</p></a></li>
+                        <li class="filtre_sel"><a href="#"><i class="fas fa-child"></i><p class="filtre_p">Familial</p></a></li>
+                        <li class="filtre_sel"><a href="#"><i class="fas fa-heart"></i><p class="filtre_p">Romantique</p></a></li>
+                        <li class="filtre_sel"><a href="#"><i class="fas fa-dog"></i><p class="filtre_p">Animaux autorisés</p></a></li>
+                    </ul>
+                    
+                </div>
                 <div class="info">
                     <i class="fas fa-info"></i>
                     <p>Plus de 500 logements sont disponibles dans cette ville</p>
@@ -194,7 +190,7 @@
                                 <figcaption>
                                     <h3>Hôtel Le soleil du matin</h3>
                                     <p>Nuit à partir de 128<strong>&euro;</strong></p>
-                                    <span>
+                                    <span class="float_b">
                                         <i class="fas fa-star"></i>
                                         <i class="fas fa-star"></i>
                                         <i class="fas fa-star"></i>
@@ -211,7 +207,7 @@
                                 <figcaption>
                                     <h3>Au coeur de l'eau Chambre d'hotes</h3>
                                     <p>Nuit à partir de 71<strong>&euro;</strong></p>
-                                    <span>
+                                    <span class="float_b">
                                         <i class="fas fa-star"></i>
                                         <i class="fas fa-star"></i>
                                         <i class="fas fa-star"></i>
@@ -228,7 +224,7 @@
                                 <figcaption>
                                     <h3>Hôtel Tout bleu et Blanc</h3>
                                     <p>Nuit à partir de 68<strong>&euro;</strong></p>
-                                    <span>
+                                    <span class="float_b">
                                         <i class="fas fa-star"></i>
                                         <i class="fas fa-star"></i>
                                         <i class="fas fa-star"></i>

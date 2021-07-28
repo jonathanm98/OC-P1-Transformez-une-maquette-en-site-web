@@ -1,9 +1,5 @@
-@font-face {
-    font-family: "raleway";
-    src: url("font/Raleway-Regular.ttf") format('truetype');
-}
+/* Reset */
 
-/* Reset (basique)*/
 * {
     margin: 0;
     padding: 0;
@@ -12,8 +8,9 @@
 }
 
 /* balises diverses */
+
 body {
-    font-family: "raleway";
+    font-family: 'Raleway', sans-serif;
     font-size: 1em;
 }
     
@@ -21,12 +18,9 @@ body {
     width: 85%;
     margin: auto;
 }
-
-
 h1 {
     font-size: 1.42em;
 }
-
 a {
     text-decoration: none;
     color: black;
@@ -42,8 +36,8 @@ header {
     margin-bottom: 50px;
 }
 header .logo {
-    margin-top: 15px;
-    display: block;
+    position: relative;
+    top: 10px;
 }
 header nav {
     display: flex;
@@ -73,7 +67,7 @@ header nav a:hover {
 /* NAVIGATION */
 
 .titre h1 {
-    margin-bottom: 8px;
+    margin-bottom: 12px;
 }
 .recherche_form {
     margin-top: 19px;
@@ -115,20 +109,36 @@ button {
     display: none !important;
 }
 
-.filtre {
+.conteneur {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    margin-top: 26px;
+}
+.filtres {
     display: flex;
     flex-wrap: wrap;
-    align-items: baseline;
-    max-width: 65%;
+    font-size: 18px;
     font-weight: bold;
-    margin-top: 32px;
-    margin-left: 8px;
+    padding: 5px;
+    list-style-type: none;
+}
+.filtres a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #000;
+}
+.filtres li {
+    white-space: nowrap;
+    overflow: hidden;
 }
 .filtre_sel {
     display: flex;
     align-items: center;
     flex-wrap: nowrap;
-    border: 2px solid #F2F2F2;
+    border: 2px solid #cccccc;
     border-radius: 200px;
     text-decoration: none;
     color: black;
@@ -136,7 +146,7 @@ button {
     margin-left: 25px;
 }
 .filtre_sel i {
-    padding: 15px 15px 15px 15px;
+    padding: 15px;
     background-color: #DEEBFF;
     height: 50px;
     width: 50px;
@@ -148,31 +158,32 @@ button {
     border-radius: 100%;
     color: #0065FC;
 }
-.filtre_sel p {
-    padding: 0 10px 0 10px;
-    font-size: 1.13em;
-    white-space: nowrap;
-}
-.filtre a:hover {
-    color: #0065FC;
-    background-color: #f2f2f2;
-    border: 2px solid #0065FC;
-}
 .info {
     display: flex;
     margin-top: 20px;
-    width: 100%;
+    align-items: center;
 }
 .fa-info {
     color: #0065FC;
     font-size: 0.70em;
     border: 1px solid #cfcfcf;
     border-radius: 100%;
+    /* padding: 4px 6px 4px 6px; */
     margin-right: 10px;
     height: 20px;
     width: 20px;
     line-height: 16.5px;
     text-align: center;
+}
+.filtre li:hover {
+    color: #0065FC;
+    background-color: #f2f2f2;
+    border: 2px solid #0065FC;
+}
+.filtre_p {
+    padding: 0 10px;
+    
+
 }
 
 /* MAIN */
@@ -300,7 +311,14 @@ button {
     padding: 5px;
 }
 .populaire figcaption {
-    margin-right: 10px
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 10px;
+}
+.float_b {
+    position: relative;
+    bottom: 0px;
 }
 
 /* Section activités */
@@ -380,7 +398,7 @@ footer h4 {
 
 @media only screen and (max-width: 1200px) { 
 
-    .filtre {
+    .conteneur {
         flex-wrap: wrap;
     }
     .filtre_sel {
@@ -479,7 +497,6 @@ footer h4 {
     .btn_text {
         display: none;
     }
-
     .filtre h3 {
         width: 100%;
     }
