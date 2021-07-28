@@ -322,8 +322,8 @@ button {
     display: flex;
     flex-direction: column;
 }
-.populaires figcaption span {
-
+.float_b {
+    margin-top: auto;
 }
 
 /* Section activités */
