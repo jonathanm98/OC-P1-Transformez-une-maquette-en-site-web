@@ -330,52 +330,64 @@ button {
 /* Section activités */
 
 #activites {
-    padding-top: 65px;
+    margin-top: 50px;
 }
 #activites h2 {
-    padding-bottom: 30px;
+    font-size: 1.4em;
 }
 .activites {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    margin: 0;
-    padding: 0;
-}
+    margin-top: 25px;
+  }
 .activites img {
-    border-top-left-radius: 1em;
-    border-top-right-radius: 1em;
     object-fit: cover;
 }
-.activites h4 {
-    padding: 20px 0 20px 20px;
-}
-.act1, .double {
-    width: 24%;
-}
-.act2 {
-    display: block;
-    box-shadow: 0px 0px 10px #c9c9c9;
-    border-radius: 1em 1em 1em 1em;
-    width: 96%;
-}
-.act2 img {
-    height: 144px;
-    width: 100%;
-}
-.act1 {
-    box-shadow: 0px 0px 10px #c9c9c9;
-    border-radius: 1em 1em 1em 1em;
-}
-.act1 img {
-    height: 388px;
-    width: 100%;
-}
-.double {
+.pomegues_frioul, .garde_longchamp {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-}
+    width: 24%;
+  }
+  .calanques, .vieux_port {
+      width: 24%;
+  }
+  
+.activites img {
+    border-radius: 15px 15px 0 0;
+    object-fit: cover;
+  }
+  
+.grande_photo img {
+    width: 100%;
+    height: 400px;
+  }
+  
+.grand_vgt img {
+    width: 100%;
+    height: 160px;
+  }
+  
+.moyen_vgt img {
+    width: 100%;
+    height: 140px;
+  }
+  
+.petit_vgt img {
+    width: 100%;
+    height: 120px;
+  }
+  
+.act_shadow {
+    border: 1px solid #f2f2f2;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px #f2f2f2;
+  }
+  
+.activites h4 {
+    margin-left: 15px;
+    padding: 20px 0;
+  }
 
 /* FOOTER */
 
@@ -440,30 +452,30 @@ footer h4 {
     }
     .activites {
         flex-wrap: wrap;
-        min-height: 700px;
-        justify-content: space-between;
-        align-content: space-between;
     }
     .activites img {
-        max-height: 134px;
-        width: 100%;
-        object-fit: cover;
+        height: 134px;
     }
-    .double {
-        width: 100%;
-        flex-direction: row;
+    .act_pdng {
+        margin-top: 20px;
     }
-    .act1 {
-        width: 48%;
+    .pomegues_frioul, .garde_longchamp {
+        width: 49%;
     }
-    .act2 {
-        width: 48%;
+    .calanques, .vieux_port {
+        width: 49%;
     }
-    .order1 {
+    .garde_longchamp {
         order: 1;
     }
-    .order2 {
+    .vieux_port {
+        order: 3;
+    }
+    .pomegues_frioul {
         order: 2;
+    }
+    .calanques {
+        order: 4;
     }
 
 }
@@ -540,31 +552,27 @@ footer h4 {
         width: 100vmin;
         border-radius: 0%;
     }
-    #activites {
+    .pomegues_frioul, .garde_longchamp {
         width: 96%;
-        margin: auto;
+        margin-left: auto;
+        margin-right: auto;
     }
-    .activites {
-        flex-wrap: wrap;
-        min-height: 1500px;
+    .calanques, .vieux_port {
+        width: 96%;
+        margin-left: auto;
+        margin-right: auto;
     }
-    .activites img {
-        max-height: 134px;
-        width: 100%;
-        object-fit: cover;
+    .garde_longchamp {
+        order: unset;
     }
-    .double {
-        width: 100%;
-        flex-wrap: wrap;
+    .vieux_port {
+        order: unset;
     }
-    .act1 {
-        width: 100%;
+    .pomegues_frioul {
+        order: unset;
     }
-    .act2 {
-        width: 100%;
-    }
-    .padding_act {
-        margin-bottom: 60px;
+    .calanques {
+        order: unset;
     }
     footer {
         width: 100%;
