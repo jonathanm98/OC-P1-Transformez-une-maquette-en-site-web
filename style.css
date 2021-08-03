@@ -226,7 +226,7 @@ button {
     box-shadow: 0px 0px 10px #c9c9c9;
     margin-bottom: 30px;
 }
-.vgt {
+.vignette {
     width: 30%;
 }
 #hebergements i {
@@ -363,17 +363,17 @@ button {
     height: 400px;
   }
   
-.grand_vgt img {
+.grand_vignette img {
     width: 100%;
     height: 160px;
   }
   
-.moyen_vgt img {
+.moyen_vignette img {
     width: 100%;
     height: 140px;
   }
   
-.petit_vgt img {
+.petit_vignette img {
     width: 100%;
     height: 120px;
   }
