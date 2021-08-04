@@ -272,14 +272,12 @@ button {
     flex-direction: column;
     align-content: center;
     width: 100%;
-    /* min-height: 626px; */
     margin-top: 50px;
     border-radius: 1em 1em 1em 1em;
     background-color: #F2F2F2;
 }
 #populaires {
     display: flex;
-    flex-direction: row;
 }
 .fa-chart-line {
     float: right;
@@ -332,6 +330,7 @@ button {
 }
 #activites h2 {
     font-size: 1.4em;
+    margin-left: 2%;
 }
 .activites {
     display: flex;
@@ -345,10 +344,10 @@ button {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 24%;
+    width: 23%;
   }
   .calanques, .vieux_port {
-      width: 24%;
+      width: 23%;
   }
   
 .activites img {
@@ -407,12 +406,6 @@ footer li {
 }
 footer h4 {
     padding: 0 0 10px 0;
-}
-
-@media only screen and (max-width: 1415px) {
-    header, main {
-        width: 95%;
-    }
 }
 
 @media only screen and (max-width: 1200px) { 
