@@ -181,7 +181,7 @@ button {
     border: 2px solid #0065FC;
 }
 .filtre_p {
-    padding: 0 10px;
+    padding: 0 15px;
     
 
 }
@@ -237,7 +237,7 @@ button {
     padding: 5px 5px 0 5px ;
     width: 100%;
     height: 114px;
-    /* object-fit: cover; */
+    object-fit: cover;
 }
 #hebergements figcaption {
     padding-left: 10px;
@@ -495,8 +495,11 @@ footer h4 {
         margin: 0 2%;
         margin-top: 20px;
     }
+    .menu_haut {
+        width: 100%;
+    }
     .menu_h, .menu_a {
-        width: 50vmin;
+        width: 50%;
     }
     header nav a {
         border-top-style: none;
