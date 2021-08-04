@@ -330,7 +330,6 @@ button {
 }
 #activites h2 {
     font-size: 1.4em;
-    margin-left: 2%;
 }
 .activites {
     display: flex;
@@ -542,6 +541,9 @@ footer h4 {
     .populaires {
         width: 100vmin;
         border-radius: 0%;
+    }
+    #activites h2 {
+        margin-left: 2%;
     }
     .pomegues_frioul, .garde_longchamp {
         width: 96%;
