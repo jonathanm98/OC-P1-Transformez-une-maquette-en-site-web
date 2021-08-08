@@ -181,9 +181,12 @@ button {
     border: 2px solid #0065FC;
 }
 .filtre_p {
-    padding: 0 15px;
+    padding: 0 10px;
     
 
+}
+.filtre_large {
+    width: 100%;
 }
 
 /* MAIN */
