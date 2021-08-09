@@ -185,9 +185,7 @@ button {
     
 
 }
-.filtre_large {
-    width: 100%;
-}
+
 
 /* MAIN */
 
@@ -537,6 +535,9 @@ footer h4 {
     .filtre_sel {
         margin-left: 0;
         margin-right: 25px;
+    }
+    .filtre_large {
+        margin-right: 100px
     }
     #hebergements {
         background-color: #fff;
