@@ -144,6 +144,9 @@ button {
     height: 50px;
     margin-right: 25px;
 }
+.filtre h3 {
+    margin-right: 15px;
+}
 .filtre_sel i {
     padding: 15px;
     background-color: #DEEBFF;
